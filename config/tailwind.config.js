@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const daisyui = require("daisyui")
 
 module.exports = {
   content: [
@@ -22,3 +23,4 @@ module.exports = {
     require('daisyui'),
   ]
 }
+
