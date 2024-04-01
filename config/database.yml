@@ -30,7 +30,7 @@ development:
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: db
   username: root
-  password: password
+  password: <%= ENV["RENDER_DB_PASSWORD"] %>
   database: my_app_development
 
   # The specified database role being used to connect to PostgreSQL.
@@ -89,6 +89,6 @@ test:
 #
 production:
   <<: *default
-  database: app_development_2va3
+  database: my_app_production_16z3
   username: root
   password: <%= ENV["RENDER_DB_PASSWORD"] %>
